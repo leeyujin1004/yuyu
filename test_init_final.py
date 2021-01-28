@@ -393,10 +393,10 @@ def init():
 	tmp_now = datetime.datetime.now() + datetime.timedelta(hours = int(basicSetting[0]))
 	
 	if int(basicSetting[13]) == 0 :
-		endTime = tmp_now.replace(hour=int(basicSetting[10]), minute=int(basicSetting[5]), second = int(0))
+		endTime = tmp_now.replace(hour=int(basicSetting[4]), minute=int(basicSetting[5]), second = int(0))
 		endTime = endTime + datetime.timedelta(days=int(1000))
 	else :
-		endTime = tmp_now.replace(hour=int(basicSetting[10]), minute=int(basicSetting[5]), second = int(0))
+		endTime = tmp_now.replace(hour=int(basicSetting[4]), minute=int(basicSetting[5]), second = int(0))
 		if endTime < tmp_now :			
 			endTime = endTime + datetime.timedelta(days=int(basicSetting[13]))
 	

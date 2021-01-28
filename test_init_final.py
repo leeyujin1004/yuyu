@@ -330,7 +330,7 @@ def init():
 	
 	if int(basicSetting[13]) == 0 :
 		endTime = tmp_now.replace(hour=int(basicSetting[4]), minute=int(basicSetting[5]), second = int(0)
-		endTime = endTime + datetime.timedelta(days=int(1000))
+		endTime = endTime + datetime.timedelta(days=int(1000)
 	else :
 		endTime = tmp_now.replace(hour=int(basicSetting[4]), minute=int(basicSetting[5]), second = int(0)
 		if endTime < tmp_now :			
